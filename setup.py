@@ -129,4 +129,9 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
     ],
+    entry_points={
+        "openedx.user_partition_scheme": [
+            "group = platform_plugin_sample.extensions.groups:GroupPartitionScheme",
+        ],
+    },
 )
